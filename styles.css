@@ -1,0 +1,25 @@
+.material-icons{
+    /* border:2px solid purple; */
+    margin-bottom: 0;
+    padding-bottom:0;
+}
+.material-icons.md-24 { 
+    font-size: 24px; 
+    color:gray;
+    /* border:2px solid green; */
+   margin-right:0.2em;
+}
+.email-input{
+    padding:0.5em;
+    border:1px solid gray;
+    border-radius:0.5em;
+    display: flex;
+    margin-top:0.25em;
+}
+ .email-input > input{
+    border:none;
+    font-size:24px;    
+    width:100%;
+    
+ }
+ 

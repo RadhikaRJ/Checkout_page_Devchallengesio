@@ -24,7 +24,11 @@ input + span {
     content: '✓';
     padding-left: 5px;
   }
-
+  select option {
+    /* background-color: gray; */
+    color: black;
+    font-weight: bold;
+}
 
 .material-icons {
     /* border:2px solid purple; */

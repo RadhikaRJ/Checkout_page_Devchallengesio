@@ -10,6 +10,22 @@ body {
     width: 475px;
 }
 
+input + span {
+    padding-right: 30px;
+  }
+  
+  input:invalid+span:after {
+    position: absolute; content: '✖';
+    padding-left: 5px;
+  }
+  
+  input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+  }
+
+
 .material-icons {
     /* border:2px solid purple; */
     margin-bottom: 0;

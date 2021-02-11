@@ -17,6 +17,38 @@ btnIncShoesRef.addEventListener("click",incrementShoesQuantity);
 btnDecShoesRef.addEventListener("click",decrementShoesQuantity);
 
 
+var btnContinueRef = document.querySelector(".btn-continue");
+btnContinueRef.addEventListener("click",verifyInput);
+
+
+function verifyInput(){
+    var email=document.getElementById('email').value.toString();
+    // console.log(email);
+    var phone=document.getElementById('tel').value.toString();
+    // console.log(phone);
+    var name=document.getElementById('name').value.toString();
+    // console.log(name);
+    var address= document.getElementById('address').value.toString();
+    // console.log(address);
+    var city=document.getElementById('city').value.toString();
+    // console.log(city);
+    var postalCode=document.getElementById('postalCode').value.toString();
+    // console.log(postalCode);
+    var country=document.getElementById('country').value.toString();
+    // console.log(country);
+
+    if(email==""||phone==""|name==""|address==""|city==""|postalCode==""|country==""){
+        alert("The fields are either invalid or empty!\nCheck details & enter again!");
+    }
+    else{
+        alert("Details Submitted Successfully!");
+    }
+}
+
+
+
+
+
 function incrementBagQuantity(){
     var currentBagQuantity=document.getElementById('bagQuantity').innerText;
     //console.log(currentBagQuantity);

@@ -65,13 +65,13 @@
 
           <label>E-mail</label>
           <div class="user-input">
-            <i class="material-icons md-24">email</i><input required type="email" placeholder="Enter your email..."><span></span>
+            <i class="material-icons md-24">email</i><input id="email" required type="email" placeholder="Enter your email..."><span></span>
           </div>
           <br>
 
           <label>Phone</label>
           <div class="user-input">
-            <i class="material-icons md-24">call</i><input required type="tel" placeholder="Enter your phone..."
+            <i class="material-icons md-24">call</i><input id="tel" required type="tel" placeholder="Enter your phone..."
               pattern="[0-9]{2}-[0-9]{10}"><span></span>
           </div>
 
@@ -83,19 +83,19 @@
 
           <label>Full name</label>
           <div class="user-input">
-            <i class="material-icons md-24">account_circle</i><input required type="text" value="Rodney Cotton"><span></span>
+            <i class="material-icons md-24">account_circle</i><input id="name" required type="text" value="Rodney Cotton"><span></span>
           </div>
           <br>
 
           <label>Address</label>
           <div class="user-input">
-            <i class="material-icons md-24">home</i><input required type="text" placeholder="Your address.." maxlength="100"><span></span>
+            <i class="material-icons md-24">home</i><input id="address" required type="text" placeholder="Your address.." maxlength="100"><span></span>
           </div>
           <br>
 
           <label>City</label>
           <div class="user-input">
-            <i class="material-icons md-24">apartment</i><input required type="text" placeholder="Your city.."><span></span>
+            <i class="material-icons md-24">apartment</i><input id="city" required type="text" placeholder="Your city.."><span></span>
           </div>
           <br>
           <div class="country-postalcode">
@@ -103,7 +103,7 @@
               <label>Country</label>
               <div class="user-input">
                 <!-- <i class="material-icons md-24">apartment</i><input required type="text" placeholder="Your country.."><span></span> -->
-                <i class="material-icons md-24">apartment</i><select multiple size="3">
+                <i class="material-icons md-24">apartment</i><select id="country" multiple size="3">
                   <option>India</option>
                   <option>Sri Lanka</option>
                   <option>Bangladesh</option>
@@ -117,7 +117,7 @@
             <div class="postal-code">
               <label>Postal code</label>
               <div class="user-input">
-                <i class="material-icons md-24">markunread_mailbox</i><input required type="text"
+                <i class="material-icons md-24">markunread_mailbox</i><input id="postalCode" required type="text"
                   placeholder="Your postal code.." pattern="^[0-9]*$"  ><span></span>
               </div>
             </div>

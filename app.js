@@ -18,11 +18,11 @@ btnDecShoesRef.addEventListener("click",decrementShoesQuantity());
 
 
 function incrementBagQuantity(){
-    var currentBagQuantity=document.getElementById('bagQuantity').value;
+    var currentBagQuantity=document.getElementById('bagQuantity').innerText;
     console.log(currentBagQuantity);
     var finalBagQuantity=Number(currentBagQuantity)+1;
     bagQuantityRef.innerHTML=Number(finalBagQuantity);
-    var currentShoesQuantity=shoesQuantityRef.value;
+    var currentShoesQuantity=shoesQuantityRef.innerText;
     updateTotalPrice(currentShoesQuantity,finalBagQuantity);
 
 }

@@ -14,7 +14,7 @@ var shoesQuantityRef = document.querySelector("#shoesQuantity");
 
 btnIncShoesRef.addEventListener("click",incrementShoesQuantity);
 
-// btnDecShoesRef.addEventListener("click",decrementShoesQuantity);
+btnDecShoesRef.addEventListener("click",decrementShoesQuantity);
 
 
 function incrementBagQuantity(){
@@ -50,7 +50,25 @@ function decrementBagQuantity(){
 }
 
 
-function updateTotalPrice(quantityOfShoes,quantityOfBags){
+function decrementShoesQuantity(){
+    var currentShoesQuantity=document.getElementById('shoesQuantity').innerText;
+    var finalShoesQuantity=Number(currentShoesQuantity)-1;
+    if(finalShoesQuantity<0){
+        finalShoesQuantity=0;
+    }
+    shoesQuantityRef.innerHTML=Number(finalShoesQuantity);
+    var currentBagQuantity=document.getElementById('bagQuantity').innerText;
+    updateTotalPrice(finalShoesQuantity,currentBagQuantity);
+}
+
+function updateTotalPrice(quantityOfShoes,quantityOfBags){    
     var totalAmount = 19+54.99*Number(quantityOfBags)+74.99*Number(quantityOfShoes);
-   totalAmtRef.innerHTML=totalAmount.toFixed(2);
+    if(quantityOfShoes==0 && quantityOfBags==0){
+        totalAmount=0;
+        totalAmtRef.innerHTML=totalAmount.toFixed(2);
+    }
+    else{
+        totalAmtRef.innerHTML=totalAmount.toFixed(2);
+    }
+   
 }

@@ -166,7 +166,7 @@ input + span {
 
 }
 
-@media (min-width:675px){
+@media (min-width:475px){
     .main-container {
         margin: 0 auto;
         width: 990px;

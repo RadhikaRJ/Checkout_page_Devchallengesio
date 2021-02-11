@@ -6,15 +6,15 @@ var bagQuantityRef = document.querySelector("#bagQuantity");
 
 btnIncBagRef.addEventListener("click",incrementBagQuantity);
 
-btnDecBagRef.addEventListener("click",decrementBagQuantity());
+btnDecBagRef.addEventListener("click",decrementBagQuantity);
 
 var btnDecShoesRef = document.querySelector("#btnDecShoes");
 var btnIncShoesRef = document.querySelector("#btnIncShoes");
 var shoesQuantityRef = document.querySelector("#shoesQuantity");
 
-btnIncShoesRef.addEventListener("click",incrementShoesQuantity());
+btnIncShoesRef.addEventListener("click",incrementShoesQuantity);
 
-btnDecShoesRef.addEventListener("click",decrementShoesQuantity());
+btnDecShoesRef.addEventListener("click",decrementShoesQuantity);
 
 
 function incrementBagQuantity(){
@@ -22,7 +22,7 @@ function incrementBagQuantity(){
     console.log(currentBagQuantity);
     var finalBagQuantity=Number(currentBagQuantity)+1;
     bagQuantityRef.innerHTML=Number(finalBagQuantity);
-    var currentShoesQuantity=shoesQuantityRef.innerText;
+    var currentShoesQuantity=document.getElementById('shoesQuantity').innerText;
     updateTotalPrice(currentShoesQuantity,finalBagQuantity);
 
 }
@@ -32,5 +32,5 @@ function incrementBagQuantity(){
 
 function updateTotalPrice(quantityOfShoes,quantityOfBags){
     var totalAmount = 19+54.99*Number(quantityOfBags)+74.99*Number(quantityOfShoes);
-   totalAmtRef.innerHTML=totalAmount;
+   totalAmtRef.innerHTML=totalAmount.toFixed(2);
 }

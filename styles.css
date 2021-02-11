@@ -188,4 +188,9 @@ input + span {
         
         order:0;
     }
+    .cart-item-details {
+        display: flex;
+        border: 2px solid blue;
+        justify-content: space-evenly;
+    }
 }

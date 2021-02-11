@@ -99,7 +99,9 @@ input + span {
     /* border: 2px solid blue; */
     justify-content: space-evenly;
 }
-
+.item-name{
+    font-size:20px;
+}
 .final-details>p {
     border-top: 2px solid gray;
     padding-top: 0.5em;

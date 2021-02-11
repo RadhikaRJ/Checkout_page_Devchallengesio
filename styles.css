@@ -97,7 +97,7 @@ input + span {
 .cart-item-details {
     display: flex;
     /* border: 2px solid blue; */
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .final-details>p {
@@ -187,10 +187,5 @@ input + span {
     .user-checkout-details{
         
         order:0;
-    }
-    .cart-item-details {
-        display: flex;
-        border: 2px solid blue;
-        justify-content: space-evenly;
     }
 }

@@ -165,3 +165,26 @@ input + span {
     text-align: center;
 
 }
+
+@media (min-width:675px){
+    .main-container {
+        margin: 0 auto;
+        width: 990px;
+      
+    }
+    .cart-view{
+        display: flex;
+     
+     align-items: flex-start;
+     justify-content: space-between;
+    }
+    .cart-details-container{
+        
+        order:1;
+    }
+
+    .user-checkout-details{
+        
+        order:0;
+    }
+}

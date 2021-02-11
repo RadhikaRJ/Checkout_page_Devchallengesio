@@ -143,6 +143,7 @@ input + span {
     letter-spacing: 1px;
     font-size: 18px;
     margin-top:1em;
+    outline:none;
 }
 
 .btn-continue {
@@ -151,7 +152,11 @@ input + span {
     border: 2px solid #ff7b00;
     float: right;
 }
+ .btn:active,
+ .btn:focus{
+     border:5px solid #8cf515;
 
+ }
 .container-footer {
     margin-top:5em;
 }
